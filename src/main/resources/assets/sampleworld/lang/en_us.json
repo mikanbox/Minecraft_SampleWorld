@@ -1,0 +1,4 @@
+{
+  "sampleworld.invalid.world": "Unable to find world '%s'",
+  "sampleworld.invalid.pos": "Unable to find valid portal location"
+}

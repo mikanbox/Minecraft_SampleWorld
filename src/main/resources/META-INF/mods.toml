@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="MIT"
+[[mods]]
+modId="sampleworld"
+version="${file.jarVersion}"
+displayName="Sample Biome and Dimension"
+authors="mikanbox55"
+description='''A minimal mod for generating dimension and biome'''
+
+[[dependencies.sampleworld]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[40,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.sampleworld]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"
