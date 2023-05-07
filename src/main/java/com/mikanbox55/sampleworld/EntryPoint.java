@@ -5,18 +5,23 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.DeferredRegister;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Mod(EntryPoint.MODID)
 public class EntryPoint {
     public static final String MODID = "sampleworld";
-    public static final ResourceLocation DIM_ID = new ResourceLocation(MODID, "sample_world_location");
+    public static List<DeferredRegister<?>> FORGEREGISTRIES = new ArrayList<>();
 
     public EntryPoint() {
-        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         MinecraftForge.EVENT_BUS.register(this);
+        new com.mikanbox55.sampleworld.SampleDimension(MODID, FORGEREGISTRIES);
 
-        Register.FORGEREGISTRIES.forEach(item -> item.register(bus));
+        FORGEREGISTRIES.forEach(item -> item.register(modEventBus));
     }
 
 }
