@@ -26,4 +26,5 @@ Test registered dimenstion
 ## 構造
 - EntryPoint : EventBusの取得とレジストリのリストの作成。EventBusへの登録
 - SampleDimension : 登録用オブジェクト作成
-
+- SampleBlock : 右クリック時にテレポート発動
+- SampleMesageBlock : 右クリック時にチャットに投稿
