@@ -20,6 +20,10 @@ public class EntryPoint {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         MinecraftForge.EVENT_BUS.register(this);
         new com.mikanbox55.sampleworld.SampleDimension(MODID, FORGEREGISTRIES);
+        new com.mikanbox55.sampleworld.SampleBlock(MODID, FORGEREGISTRIES);
+        new com.mikanbox55.sampleworld.SamplePortalBlock(MODID, FORGEREGISTRIES);
+        new com.mikanbox55.sampleworld.SampleMessageBlock(MODID, FORGEREGISTRIES);
+        new com.mikanbox55.sampleworld.BiomeAlpha(MODID, FORGEREGISTRIES);
 
         FORGEREGISTRIES.forEach(item -> item.register(modEventBus));
     }

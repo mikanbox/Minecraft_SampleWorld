@@ -13,11 +13,13 @@ import java.util.List;
 
 public class SampleDimension {
     public SampleDimension (String modid, List<DeferredRegister<?>> forgeregistries) {
-        ResourceLocation DIM_ID = new ResourceLocation(modid,
+        ResourceLocation DIMENSION_ID = new ResourceLocation(modid,
                 "sample_world_location");
+
+
         DeferredRegister<Biome> BIOMES = DeferredRegister.create(ForgeRegistries.BIOMES, modid);
-        RegistryObject<Biome> BIOME = BIOMES.register(
-            DIM_ID.getPath(),
+        BIOMES.register(
+                DIMENSION_ID.getPath(),
             () -> new Biome.BiomeBuilder()
                     .precipitation(Biome.Precipitation.RAIN)
                     .temperature(0.5F)

@@ -1,4 +1,8 @@
 {
   "sampleworld.invalid.world": "Unable to find world '%s'",
-  "sampleworld.invalid.pos": "Unable to find valid portal location"
+  "sampleworld.invalid.pos": "Unable to find valid portal location",
+  "block.sampleworld.sampleblock": "Sample Block",
+  "block.sampleworld.sampleportalblock": "Sample Portal  Block",
+  "block.sampleworld.samplemessageblock": "Sample Message  Block",
+  "biome.sampleworld.biome_alpha": "Biome Alpha"
 }

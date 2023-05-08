@@ -24,9 +24,6 @@ Test registered dimenstion
 - FMLJavaModLoadingContext : Mod系のイベントをリッスンするEventBus
 
 ## 構造
-- EntryPoint : インスタンス化した際に自身を Forgeのmod系EventBusに登録する. @Modアノテーションされている通り、EntryPointが最初にインスタンス化されて起動する。
-
-- Register
-    -
-
+- EntryPoint : EventBusの取得とレジストリのリストの作成。EventBusへの登録
+- SampleDimension : 登録用オブジェクト作成
 
