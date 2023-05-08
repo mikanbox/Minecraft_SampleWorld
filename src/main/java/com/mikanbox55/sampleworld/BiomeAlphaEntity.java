@@ -59,21 +59,6 @@ public class BiomeAlphaEntity {
         BiomeDefaultFeatures.addJungleMelons(biomeFeatures);
 
 
-//        return new Biome.BiomeBuilder()
-//                .precipitation(Biome.Precipitation.RAIN)
-//                .temperature(0.5F)
-//                .downfall(0.5F)
-//                .biomeCategory(Biome.BiomeCategory.FOREST)
-//                .mobSpawnSettings(MobSpawnSettings.EMPTY)
-//                .specialEffects(new BiomeSpecialEffects.Builder()
-//                        .skyColor(8103167)
-//                        .fogColor(12638463)
-//                        .waterColor(4445678)
-//                        .waterFogColor(270131)
-//                        .build())
-//                .generationSettings(BiomeGenerationSettings.EMPTY)
-//                .build();
-
         return biome(Biome.Precipitation.RAIN, 0.5F, 0.7F,
                 0x3F76E4,
                 0x050533,
@@ -88,12 +73,6 @@ public class BiomeAlphaEntity {
                 .temperature(temperature)
                 .downfall(0.5F)
                 .biomeCategory(Biome.BiomeCategory.FOREST)
-//                .specialEffects(new BiomeSpecialEffects.Builder()
-//                        .skyColor(getSkyColorWithTemperatureModifier(temperature))
-//                        .fogColor(12638463)
-//                        .waterColor(waterColor)
-//                        .waterFogColor(waterFogColor)
-//                        .build())
                 .specialEffects((new BiomeSpecialEffects.Builder())
                         .waterColor(waterColor)
                         .waterFogColor(waterFogColor)
